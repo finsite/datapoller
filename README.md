@@ -4,7 +4,6 @@
 This is a template for a python application please update the details here.
 
 
-
 ## Getting Started
 
 Insert a description here

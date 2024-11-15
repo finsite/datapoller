@@ -1,0 +1,33 @@
+name: Python CI with Secrets and Environment Variables
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Runner environment (you can also use macos-latest or windows-latest)
+
+    # Set environment variables that are accessible throughout this job
+    env:
+      MY_VAR: "some_value"   # Environment variable that can be used by all steps
+      ANOTHER_VAR: "another_value"
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Python application with secrets
+      run: |
+        echo "MY_SECRET_KEY=${{ secrets.MY_SECRET_KEY }}" >> $GITHUB_ENV
+        python your_script.py
