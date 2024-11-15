@@ -1,7 +1,4 @@
-json
-os
-requests
-time
-logging
-boto3
-pika
+requests=2.32.3
+logging==0.4.9.6
+boto3==1.35.61
+pika==1.3.2
