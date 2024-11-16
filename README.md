@@ -21,9 +21,24 @@ The option is there as a parameter for debugging if required.
 Each script has example files that you all you have to do is type get-help (scriptname) to see examples.
 
 ```
-### Installing
+## Installation
 
-Write the installation docs here
+1. Clone the repository.
+2. Set up a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+## Environment Variables
+
+- `STOCK_API_TYPE`: The stock API to use (e.g., `yfinance`, `alpha_vantage`, `polygon`). Default: `yfinance`
+- `QUEUE_TYPE`: The type of queue to send data to (`sqs` or `rabbitmq`). Default: `sqs`
+- `SQS_QUEUE_URL`: The URL of the SQS queue (required if `QUEUE_TYPE=sqs`).
+- `RABBITMQ_HOST`: The RabbitMQ server address (default: `localhost`).
+- `RABBITMQ_QUEUE_NAME`: The name of the RabbitMQ queue (default: `stock_queue`).
+
+## Example .env File
+
 
 ## Running the tests
 
