@@ -1,4 +1,3 @@
-
 import pika
 
 from app.queue.queue_sender import QueueSender
