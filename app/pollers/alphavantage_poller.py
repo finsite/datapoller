@@ -1,11 +1,12 @@
 import time
+
 from app.pollers.base_poller import BasePoller
 from app.utils.rate_limit import rate_limit
+from app.utils.request_with_timeout import request_with_timeout
 from app.utils.retry_request import retry_request
-from app.utils.validate_data import validate_data
 from app.utils.track_polling_metrics import track_polling_metrics
 from app.utils.track_request_metrics import track_request_metrics
-from app.utils.request_with_timeout import request_with_timeout
+from app.utils.validate_data import validate_data
 from app.utils.validate_environment_variables import validate_environment_variables
 
 

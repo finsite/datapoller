@@ -1,12 +1,13 @@
 import os
-from app.pollers.iex_poller import IEXPoller
-from app.pollers.finnhub_poller import FinnhubPoller
-from app.pollers.polygon_poller import PolygonPoller
+
 from app.pollers.alphavantage_poller import AlphaVantagePoller
-from app.pollers.yfinance_poller import YFinancePoller
+from app.pollers.finnhub_poller import FinnhubPoller
+from app.pollers.iex_poller import IEXPoller
+from app.pollers.polygon_poller import PolygonPoller
 from app.pollers.quandl_poller import QuandlPoller
-from app.utils.validate_environment_variables import validate_environment_variables
+from app.pollers.yfinance_poller import YFinancePoller
 from app.utils.setup_logger import setup_logger
+from app.utils.validate_environment_variables import validate_environment_variables
 
 # Initialize logger
 logger = setup_logger()
@@ -51,7 +52,7 @@ class PollerFactory:
         Creates an instance of the poller based on the specified POLLER_TYPE.
 
         Returns:
-            poller: The appropriate poller instance (e.g., IEXPoller, FinnhubPoller, etc.).
+            poller: The appropriate poller instance (e.g., IEXPoller, FinnhubPoller).
         """
         # Create and return the poller instance based on the POLLER_TYPE
         if self.poller_type == "iex":
