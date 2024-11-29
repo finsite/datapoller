@@ -20,7 +20,7 @@ jobs:
           pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov=your_project --cov-report=xml
+        run: pytest --cov=datapoller --cov-report=xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
