@@ -36,6 +36,11 @@ jobs:
         run: |
           docker push ghcr.io/${{ github.repository_owner }}/datapoller:${{ github.sha }}
           docker push ghcr.io/${{ github.repository_owner }}/datapoller:latest
+          permissions:
+            contents: read
+            packages: write
+            attestations: write
+            id-token: write          
 
     # # Run tests in the Docker container using environment variables
     # - name: Run tests in Docker container
