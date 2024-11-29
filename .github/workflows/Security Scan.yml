@@ -20,7 +20,7 @@ jobs:
           pip install bandit safety
 
       - name: Run Bandit (code security)
-        run: bandit -r your_project
+        run: bandit .
 
       # - name: Run Safety (dependency security)
       #   run: safety scan
