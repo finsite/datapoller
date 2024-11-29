@@ -57,7 +57,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests fo
 ## Authors
 
 - **Mark Quinn** - [Mobious999](https://github.com/mobious999)
-- **Jason Qualkenbush** - [jasonqualkenbush](https://github.com/jasonqualkenbush)
+- **Jason Qualkenbush** - [jasonqualkenbush](https://github.com/CosmicQ)
 
 ## License
 
