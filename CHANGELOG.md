@@ -1,32 +1,14 @@
-# [1.1.0] - 2023-05-25
+# Changelog
 
-- Fixed a bug in the CSV export module.
-- Added support for exporting data to JSON.
+All notable changes to this project will be documented in this file.
 
-## Added
-
-- Support for exporting data to JSON.
-
-### Fixed
-
-- A bug in the CSV export module.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+### Added
+
+### Changed
+
+### Removed
